@@ -1,0 +1,82 @@
+/*- White: hsl(0, 0%, 100%)
+- Light gray: hsl(212, 45%, 89%)
+- Grayish blue: hsl(220, 15%, 55%)
+- Dark blue: hsl(218, 44%, 22%)
+*/
+
+html, body{
+    background-color: hsl(212, 45%, 89%);
+    font-family: 'Outfit', sans-serif;
+}
+
+.gridContainer{
+    width: 13%;
+    margin: 0px auto;
+    display: grid;
+    justify-content: center;
+    grid-template-rows: auto;
+    grid-gap: 10px;
+    background-color: hsl(0, 0%, 100%);
+    padding: 10px;
+    border-radius: 25px;
+}
+
+.gridContainer > div{
+    margin: 0px auto;
+    width: 100%;
+    background-color: hsl(0, 0%, 100%);
+    text-align: center;
+    justify-items: center;
+    align-content: center;
+    /*padding: 20px;*/
+    font-size: 15px;
+    border-radius: 25px;
+}
+
+
+
+.imagen{
+    width: 98%;
+    border-radius: 25px;
+}
+
+.parrafo1{
+    color: hsl(218, 44%, 22%);
+    font-style: bold;
+    font-weight: 700;
+    padding: 0px 35px;
+}
+
+.parrafo2{
+    color: hsl(220, 15%, 55%);
+    font-weight: 400;
+    padding: 0px 35px;
+}
+
+@media only screen and (max-width:1400px){
+    .gridContainer{
+        width: 25%;
+        /*padding: 10px;
+        border-radius: 25px;*/
+    }
+}
+
+@media only screen and (max-width:600px){
+    .gridContainer{
+        width: 30%;
+        /*padding: 10px;
+        border-radius: 25px;*/
+    }
+
+    .imagen{
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width:510px){
+    .gridContainer{
+        width: 60%;
+        /*padding: 10px;
+        border-radius: 25px;*/
+    }
+}
